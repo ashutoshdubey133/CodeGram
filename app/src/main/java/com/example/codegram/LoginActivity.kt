@@ -2,16 +2,41 @@ package com.example.codegram
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import com.example.codegram.databinding.ActivityLoginBinding
+import com.google.firebase.auth.FirebaseAuth
+
+val TAG = "LoginActivity"
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        binding.btnLogin.setOnClickListener {
+            val email = binding.etEmail.text.toString()
+            val password = binding.etPassword.text.toString()
+
+            if(email.isBlank() || password.isBlank()){
+                Toast.makeText(this, "Email/Password cannot be Empty", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            //FireBase
+            val auth = FirebaseAuth.getInstance();
+            auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
+                if(task.isSuccessful){
+                    Toast.makeText(this,"Success",Toast.LENGTH_SHORT).show()
+                }else{
+                    Log.i(TAG, "Sign In Failed",task.exception)
+                    Toast.makeText(this, "Sign In failed", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 }

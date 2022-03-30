@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "644182070183",
+    "project_id": "codegram-f2b54",
+    "storage_bucket": "codegram-f2b54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644182070183:android:b833cf590029c307cc1c82",
+        "android_client_info": {
+          "package_name": "com.example.codegram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644182070183-anb6utum2dhmfupvsbnkd6d6hs98jlrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLTV-vLzidJYA3Po9i394O0S1Y9qa6LeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644182070183-anb6utum2dhmfupvsbnkd6d6hs98jlrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
