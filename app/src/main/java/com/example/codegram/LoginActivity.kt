@@ -1,5 +1,6 @@
 package com.example.codegram
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -32,11 +33,18 @@ class LoginActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email,password).addOnCompleteListener { task ->
                 if(task.isSuccessful){
                     Toast.makeText(this,"Success",Toast.LENGTH_SHORT).show()
+                    goPostsActivity()
                 }else{
                     Log.i(TAG, "Sign In Failed",task.exception)
                     Toast.makeText(this, "Sign In failed", Toast.LENGTH_SHORT).show()
                 }
             }
         }
+    }
+
+    private fun goPostsActivity() {
+        Log.i(TAG,"Going To PostsActivity")
+        val intent = Intent(this, PostsActivity::class.java)
+        startActivity(intent)
     }
 }
