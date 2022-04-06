@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ashutosh/AndroidStudioProjects/CodeGram/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2595" />
         <entry key="..\:/Users/Ashutosh/AndroidStudioProjects/CodeGram/app/src/main/res/layout/activity_login.xml" value="0.24003623188405798" />
         <entry key="..\:/Users/Ashutosh/AndroidStudioProjects/CodeGram/app/src/main/res/layout/activity_posts.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Ashutosh/AndroidStudioProjects/CodeGram/app/src/main/res/layout/activity_profile.xml" value="0.24003623188405798" />
+        <entry key="..\:/Users/Ashutosh/AndroidStudioProjects/CodeGram/app/src/main/res/menu/menu_posts.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Ashutosh/AndroidStudioProjects/CodeGram/app/src/main/res/menu/menu_profile.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
